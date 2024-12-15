@@ -30,7 +30,14 @@
     </div>
     <div class="post-footer">
       {{ template "_internal/disqus.html" . }}
-      {{ partial "gitalk.html" . }}
+      <script src="https://utteranc.es/client.js"
+        repo="safe049/safe049.github.io"
+        issue-term="pathname"
+        label="Utterances"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+      </script>
     </div>
   </article>
 {{ end }}
