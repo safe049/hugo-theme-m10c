@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="error-404">
     <h1 class="error-404-title">O{{ partial "icon.html" (dict "ctx" $ "name" "frown") }}ps... </h1>
-    <p>The link you followed may be broken, or the page may have been removed.</p>
-    <a href="{{ "/" | relURL }}">Go home {{ partial "icon.html" (dict "ctx" $ "name" "arrow-right") }}</a>
+    <p>你说的对,但是我找不到这个页面</p>
+    <a href="{{ "/" | relURL }}">返回首页 {{ partial "icon.html" (dict "ctx" $ "name" "arrow-right") }}</a>
   </div>
 {{ end }}
